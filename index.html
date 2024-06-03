@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css">
+
+    <!-- ======================================{link-here}=============================================================== -->
+    <title>Introduce</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                <a href="#"><img src="./assets/public/slbng-brandAsset 1SLBNG.svg" alt="logo"></a>
+            </div>
+            <div class="social">
+                <a href=""><img src="./assets/public/socials/slbng-socialAsset 4Gitlab.svg" alt=""></a>
+                <a href=""><img src="./assets/public/socials/githubAsset 5.svg" alt=""></a>
+                <a href=""><img src="./assets/public/socials/linkedinAsset 6.svg" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ======================================{content-page}============================================================ -->
+    <main>
+        <div class="now_loading bip">now loading . . .</div>
+        <div class="portfolio_banner">
+            <img src="./assets/public/portfolio_bannerAsset 7.svg" alt="">
+        </div>
+        <div class="goto_app hidden">
+            <a href="./pages/portfolios.html">go to gallery</a>
+        </div>
+    </main>
+    <!-- ======================================{footer-page}============================================================= -->
+    <footer>
+        <div class="items">
+            <div class="top">Moch_Mona</div>
+            <div class="bottom">Art graphic enthusiast</div>
+        </div>
+        <div class="items">
+            <div class="top">Selected work :</div>
+            <div class="bottom">2018 - 2024</div>
+        </div>
+
+    </footer>
+    <!-- ======================================{javascript-here}========================================================= -->
+    <script>
+        window.onload=()=>{
+            setTimeout(() => {
+            const switchPage = document.querySelector('.goto_app');
+            const loading = document.querySelector('.bip');
+
+            switchPage.classList.remove('hidden');
+            loading.style.visibility = 'hidden'
+
+            switchPage.addEventListener('click', function () {
+                document.body.classList.add('fade-out')
+                setTimeout(function () {
+                    window.location.href = './pages/portfolios.html'
+                }, 500)
+            })
+
+
+        }, 15000)
+
+        
+
+
+        }
+
+    </script>
+</body>
+
+</html>

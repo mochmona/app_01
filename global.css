@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  width: 100%;
+  height: 90vh;
+}
+
+:root {
+  /* background-color  */
+
+  --Bg-color-main: #0000;
+
+  --Bg-color-second: #303443;
+  --Bg-color-third: #323B5F;
+  --text-color--main: floralwhite;
+
+  /* font option  */
+
+  --font-main: system-ui;
+  --font-second: verdana;
+  --font-third: Georgia;
+  --font-size-text: 18px;
+  --font-size-subtext: 14px;
+  --font-size-custom: 20px;
+  /* margin padding option  */
+
+  --margin-x: 0 1em;
+  --margin-y: 1em 0;
+  /* animation option   */
+  --animate-main: 0.5s ease alternate;
+  --animate-main: 1s ease alternate;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+
+.brand > a > img {
+  width: 80px;
+  height: auto;
+}
+
+.social {
+    display: inline-flex;
+    gap: 1em;
+}
+.social > a > img {
+  width: 32px;
+}
+.navbar img:hover{
+    scale: 1.5;
+    opacity: .5;
+}
+
+/* <!-- ======================================{main}============================================================== --> */
+main{
+    text-align: center;
+    height: 70%;
+    width: 100%;
+    display: grid;
+}
+
+.now_loading, .got_app{
+    display: grid;
+    place-items: center;
+}
+.portfolio_banner>img{
+    padding: 0 10em;
+    
+}
+
+.goto_app{
+  transition: .5s ease-in-out;
+}
+
+/* <!-- ======================================{footer}============================================================== --> */
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em ;
+    color: var(--Bg-color-third);
+    font-size: 14pt;
+    opacity: .6;
+}
+
+.hidden{
+  display: none;
+}
+
+.fade-out{
+  opacity: 0;
+  transition: opacity .5s ease-out;
+}
+
+@keyframes blink {
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.bip{
+  animation: blink 1s infinite;
+}
+
+/* <!-- ======================================{MEDIA QUERRY}============================================================== --> */
+@media screen and (max-width:349px) {
+  *{
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width:350px) {
+  .portfolio_banner>img{
+    padding: 0 2em;
+}
+
+footer{
+  position: relative;
+  top: 5em;
+  font-size: 12pt;
+}
+}
+
+@media screen and (min-width:768px) {
+  .portfolio_banner>img{
+    padding: 0 5em;
+    
+}
+footer{
+  font-size: 12pt;
+
+}
+}
+@media (min-width:1280px) and (max-width:1400px) {
+  /* imac resolusi 1720px */
+  
+}
+

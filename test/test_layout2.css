@@ -1,0 +1,278 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    
+    body {
+    background-color: var(--Bg-color-second);
+    font-family: var(--font-main);
+    }
+    
+    :root {
+    /* background-color  */
+    
+    --Bg-color-main: #202023;
+    
+    --Bg-color-second: #303443;
+    --Bg-color-third:  #60616126;
+    --Bg-color-four:  #F1F2F2;
+    
+    --text-color--main: floralwhite;
+    
+        /* font option  */
+    
+    --font-main: Helvetica;
+    --font-second: Verdana;
+    --font-third: Georgia;
+    --font-size-text: 14pt;
+    --font-size-subtext: 12pt;
+    --font-size-custom: 20pt;
+    /* margin padding option  */
+    
+    --margin-x: 0 1em;
+    --margin-y: 1em 0;
+    /* animation option   */
+    --animate-main: 0.5s ease alternate;
+    --animate-main: 1s ease alternate;
+    --none:none;
+    }
+    a{
+        text-decoration: var(--none);
+        color: var(--Bg-color-second);
+    }
+    
+    #app{
+        
+        /* border: 2px solid #b1c0c9; */
+        /* background: white; */
+        margin: 3em;
+        padding: 0 3em;
+    }
+
+    .headerApp{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid;
+        position: sticky;
+        padding: .5em 1em;
+        border-radius: 18px 18px 0 0 ;
+
+    }
+    
+    .main_menu {
+        width: 100%;
+        height: 67vh;
+        display: flex;
+        border: 2px solid;
+        border-radius: 0 0 18px 18px;
+        /* justify-content: space-between; */
+        /* padding: 1em 1em 1em 0; */
+    }
+    .logo{
+        width: 100px;
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.374));
+    }
+    
+    .tab{
+        padding-left: 2em;
+    }
+    
+    .tab:hover{
+        scale: 1.2;
+        background: var(--Bg-color-third);
+        font-weight: bold;
+        border: 2px solid;
+    
+    }
+    /* <!-- ======================================{here}============================================================== --> */
+    
+    .tab_panel{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 140px;
+        font-size: var(--font-size-subtext);
+    }
+    
+    .hand_portfolio{
+        width: 165px;
+        position: relative;
+    }
+    
+    /* <!-- ======================================{here}============================================================== --> */
+    .tab_content{
+        /* margin: 1em; */
+        background-color:var(--Bg-color-third);
+        width: 100%;
+        padding:.5em 3em;
+    }
+    
+    .tab_content h3 {
+        background-color: #e7e7e7;
+        width: 100%;
+        padding-bottom: .5em;
+    }
+    
+    .parentGrid{
+        /* border: 2px solid blue; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-column-gap:10px ;
+        grid-row-gap: 1rem ;
+        padding-top: 2em;
+        
+    }
+    
+    /* KONTENT 1 LOGO */
+    .itemGrid{
+        width: 215px;
+        height: 215px;
+        background: var(--Bg-color-four);
+        border-radius: 8px;
+    
+    }
+    
+    .itemGrid img{
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+        /* background-position: center; */
+        scale: .5;
+    }
+    
+    .itemGrid img:hover{
+        scale: .9;
+    }
+    
+    /* KONTEN 2 UIUX */
+    .UIUX{
+        width: 500px;
+    }
+    .UIUX img{
+        padding: .5em 0;
+        object-fit: cover;
+    }
+    .UIUX img:nth-child(5){
+        width: 800px;
+    }
+    
+    
+    /* KONTEN 3 MURAL */
+    .murals img {
+        width: 600px;
+    }
+    /* KONTEN 4 OTHER */
+    
+    .other img {
+        width: 900px;
+        padding: 1em ;
+        background: #949699;
+    }
+    /* KONTEN 5 XXX */
+    /* <!-- ======================================{here}============================================================== --> */
+    
+    
+    .content{
+        /* border: 2px solid; */
+        display: none;
+    
+    }
+    
+    .active{
+        display: block;
+        height: 100%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    
+    /* scrollbar modif */
+    
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track{
+        background: #b1c0c9;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background:cornflowerblue;
+        border-radius: 8px;
+    }
+    
+    /* <!-- ======================================{MEDIA QUERY}============================================================== --> */
+    /* display none */
+    @media (max-width: 349px) {
+        *{
+            visibility: hidden;
+        }
+    
+    }
+    
+    /* phone */
+    @media (min-width:350px) and (max-width:768px)  {
+        body{
+            margin: .5em;
+        }
+    
+        .main_menu{
+            height: 95vh;
+        }
+    
+        .tab_content{
+            padding: .5em .1em;
+        }
+    
+        .tab_content h3{
+            width: 46%;
+            padding: .5em;
+        }
+    
+        .parentGrid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .itemGrid{
+            width: 150px;
+            height: 150px;
+        }
+    
+        .hand_portfolio {
+            width: 215px;
+            /* position: relative; */
+            top: -4em;
+        }
+    }
+    
+    /* ipad mini, air, pro */
+    @media (min-width:768px) and (max-width:1024px) {
+        .parentGrid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        .tab_content {
+            padding: 0.5em 1em;
+        }
+        .tab_content h3{
+            width: 57%; 
+            padding: 1em;
+        }
+        .tab_panel{
+            justify-content: space-evenly;
+        }
+        .main_menu{
+            height: 85vh;
+        }
+        
+    }
+    
+    /* thinkpad,air 13, pro 16 */
+    @media (min-width:1280px) and (max-width:1728px) {
+        
+    }

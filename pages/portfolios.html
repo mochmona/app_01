@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="app.css">
+
+    <!-- ======================================{link-here}=============================================================== -->
+    <title>gallery</title>
+</head>
+
+<body>
+
+    <div id="apps">
+
+        <main class="main_menu">
+            <div class="tab_panel">
+                <div class="logo"><img src="../assets/public/slbng-brandAsset 1SLBNG.svg" alt=""></div>
+                <div class="tab" onclick=" openTab(0)"><a href="#content_1 active">Logo</a></div>
+                <div class="tab" onclick=" openTab(1)"><a href="#content_2">UI UX</a></div>
+                <div class="tab" onclick=" openTab(2)"><a href="#content_3">Mural</a></div>
+                <div class="tab" onclick=" openTab(3)"><a href="#content_4">Other</a></div>
+                <div class="tab" onclick=" openTab(4)"><a href="#content_5">XXX</a></div>
+                <div class="hand_portfolio"><img src="../assets/public/hand_portofolioAsset 8.svg" alt="tangan"></div>
+            </div>
+            <!-- ======================================{tabs content}============================================================== -->
+            <div class="tab_content">
+
+                <div id="content_1" class="content active">
+                    <h3>Logo</h3>
+                    <div class="parentGrid">
+                        <!-- content dinamis -->
+                    </div>
+                </div>
+                <div id="content_2" class="content">
+                    <h3>UI UX</h3>
+                    <div class="parentGrid">
+                        <div class="UIUX">
+                            <!-- content dinamis -->
+                        </div>
+                    </div>
+                </div>
+                <div id="content_3" class="content">
+                    <h3>Mural</h3>
+                    <div class="parentGrid">
+                        <div class="murals">
+                            <!-- content dinamis -->
+                        </div>
+                    </div>
+
+                </div>
+                <div id="content_4" class="content">
+                    <h3>Other</h3>
+                    <div class="parentGrid">
+                        <div class="other">
+                            <!-- content dinamis -->
+                        </div>
+                    </div>
+                </div>
+                <div id="content_5" class="content">
+                    <h3>XXX</h3>
+                </div>
+            </div>
+
+
+        </main>
+
+    </div>
+
+    <!-- ======================================{javascript-here}========================================================= -->
+    <!-- <script src="app.js"></script> -->
+    <script src="app_refactor.js"></script>
+</body>
+
+</html>
